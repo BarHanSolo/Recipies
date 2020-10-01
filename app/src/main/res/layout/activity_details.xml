@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/details_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="36dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/details_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26dp"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="saveButtonClicked"
+            android:text="Save score and back" />
+
+        <RatingBar
+            android:id="@+id/details_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:stepSize="1"
+            android:numStars="5" />
+    </LinearLayout>
+</ScrollView>
